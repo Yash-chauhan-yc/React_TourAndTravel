@@ -1,0 +1,148 @@
+body {
+	color: #727272;
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	background:#fff;
+	overflow-x: hidden;
+}
+html,
+body { height: 100% }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	letter-spacing: 0px;
+	margin-top: 0px; 
+	font-family: 'Nunito', sans-serif;
+	color: #333;
+	font-weight: 700;
+	line-height: normal;
+}
+a {
+text-decoration: none;
+transition: all 0.2s ease 0s;
+}
+a,
+a:hover,
+a:focus  {
+    color: #727272;
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 15px;
+}
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+fieldset {
+    border: 0 none;
+    margin: 0 auto;
+    padding: 0;
+}
+/*START PRELOADER DESIGN*/
+.preloader {
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.lds-dual-ring {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -40px 0 0 -40px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 46px;
+  height: 46px;
+  margin: 1px;
+  border-radius: 50%;
+  border: 5px solid #f05942;
+  border-color: #f05942 transparent #f05942 transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.no-padding { padding: 0 }
+/*END PRELOADER DESIGN*/
+.section-padding { padding: 100px 0 }
+/*START SECTION TITLE DESIGN*/
+.section-title{margin-bottom:60px;}
+.section-title  h2 {
+	font-size: 40px;
+	margin-top: 0;
+	position: relative;
+	line-height: 50px;
+	text-transform: capitalize;	
+}
+
+.section-title span {
+	color: #f05942;
+	font-weight: 600;
+	margin-bottom: 10px;
+	display: block;
+}
+@media only screen and (max-width:480px) { 
+.section-title  h2  {font-size:30px;}
+}
+
+
+.section-title-white{color:#fff;position:relative;}
+.section-title  p{
+
+}
+@media only screen and (max-width:480px) { 
+.section-title  p{
+padding: 0 10px;
+width: 90%;
+margin: auto;	
+}
+}
+/*END SECTION TITLE DESIGN*/
+/*START SCROLL TO TOP*/
+.topcontrol {
+	background: #f05942 none repeat scroll 0 0;
+	border-radius: 30px;
+	bottom: 5px;
+	box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
+	color: #fff;
+	cursor: pointer;
+	font-size: 22px;
+	height: 50px;
+	line-height: 45px;
+	opacity: 1;
+	position: fixed;
+	right: 5px;
+	text-align: center;
+	transition: all 0.2s ease 0s;
+	width: 50px;
+	z-index: 999;
+}
+.topcontrol:hover {
+    background: #ea3248;
+    color: #fff;
+}
